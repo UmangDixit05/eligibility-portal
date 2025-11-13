@@ -1,0 +1,137 @@
+.contain {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.form1 label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form1 select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.divisionArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.SemAndSub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fetch {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.fetch:hover {
+    background-color: #0056b3;
+}
+
+.form2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form2 thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.form2 th, .form2 td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.form2 tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.subjectArea {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subjectArea select{
+    width: 100%;
+}
+
+.disabledSelect {
+    width: 100%;
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+
+.disabledWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.disabledWrapperActive:hover::after {
+    content: "Select semester and division first";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: none;
+}

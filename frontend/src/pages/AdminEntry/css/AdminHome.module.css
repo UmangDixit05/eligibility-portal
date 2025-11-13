@@ -1,0 +1,18 @@
+.content{
+    width: 73vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+} 
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: 1.5rem;
+}

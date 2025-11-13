@@ -1,0 +1,118 @@
+/* Scoped styles */
+.loginWrapper {
+    width: 350px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.inputGroup label {
+    font-size: 14px;
+    color: #555;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitButton {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Global styles using :global */
+:global(.role-toggle) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    background: #e0e0e0;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 40px;
+}
+
+:global(.role-toggle input[type="radio"]) {
+    display: none;
+}
+
+:global(.role-label) {
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+    z-index: 2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+:global(.slider) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #007bff;
+    border-radius: 30px;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+:global(#admin:checked ~ .role-label[for="admin"]),
+:global(#student:checked ~ .role-label[for="student"]) {
+    color: white;
+}
+
+:global(#student:checked ~ .slider) {
+    transform: translateX(100%);
+}
+
+/* Message transitions */
+:global(.form-container) {
+    position: relative;
+}
+
+:global(.role-message) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    font-size: 14px;
+    color: #555;
+}
+
+:global(#admin:checked ~ .form-container .admin-msg) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+:global(#student:checked ~ .form-container .student-msg) {
+    opacity: 1;
+    transform: translateY(0);
+}

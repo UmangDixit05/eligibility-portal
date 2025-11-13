@@ -1,0 +1,76 @@
+/* AdminReg.module.css */
+
+.contain {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+.adminRegForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.input {
+  padding: 12px 14px;
+  border: 1.8px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.25s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+.button {
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #357ABD;
+}

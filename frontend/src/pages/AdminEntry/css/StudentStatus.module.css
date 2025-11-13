@@ -1,0 +1,146 @@
+.contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    height: 99vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 73vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .navbarElements {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbarElements button {
+    padding: 0.6rem 1.2rem;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .navbarElements button:hover {
+    background-color: #084fbc;
+    transform: scale(1.05);
+  }
+  
+  .navbarElements button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #aac8ff;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-top: 1rem;
+  }
+  
+
+.logoutStatus{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.students {
+    max-height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  .studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .studentTable th,
+  .studentTable td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .studentTable thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .studentTable tr:hover {
+    background-color: #f1f7ff;
+  }
+  
+  .rollNo {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .studentName {
+    font-weight: 500;
+    color: #222;
+  }
+  
+  /* Button Styles */
+  #button1 {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #button1:hover {
+    background-color: #0056b3;
+  }
+  
+  #button2 {
+    padding: 8px 10px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #button2:hover {
+    background-color: #b02a37;
+  }
+  
+  .deleteIcon {
+    vertical-align: middle;
+  }
+  
